@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class Button extends Component {
-    constructor(props) {
-        super(props)
-    }
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
-     <button style={{background: this.props.background, color : this.props.color , onClick= {this.}}}>
-
+      <button style={{ background: this.props.background, color: this.props.color }} onClick={this.props.onClick}>
         {this.props.text}
-     </button>
-    )
+      </button>
+    );
   }
 }
